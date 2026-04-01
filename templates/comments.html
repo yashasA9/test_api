@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>All Comments</h2>
+
+{% for comment in comments[:50] %}
+<div class="card">
+    <strong>{{ comment.name }}</strong>
+    <p>{{ comment.body }}</p>
+    <small>{{ comment.email }}</small>
+    
+</div>
+{% endfor %}
+
+{% endblock %}
