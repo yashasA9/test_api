@@ -44,7 +44,8 @@ def comments():
     comments = response.json()
 
     return render_template("comments.html", comments=comments)
-
+def test_basic():
+    assert True
 
 if __name__ == "__main__":
     app.run(debug=True)
